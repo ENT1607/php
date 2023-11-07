@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de dogs</title>
+
+    <style>
+.painel{
+    width: 1000px;
+    border: 1px solid gray;
+    height: 700px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgb(239, 25, 25);
+    box-shadow: 2px 2px 10px black;
+}
+
+img {
+    height: 550px;
+    border-radius: 20px;
+}
+
+#gerarImagenS {
+    background-color: chocolate;
+    color: rgb(195, 235, 17);
+    font-size: 30px;
+    padding: 6px;
+    border: 1px solid chocolate;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+body{
+    background-color: rgb(27, 57, 231);
+}
+
+h1{
+    color: azure;
+}
+    </style>
+
+</head>
+<body>
+    <div class="painel">
+        <h1> Gerador de imagens aleatórias </h1>
+        <div id="imagem"> </div>
+
+        <button id="gerarImagem"> Gerar </button>
+
+        <script>
+            //representar imagem da tela e botão para gerar
+            var imagem = document.getElementById('imagem');
+            var botao = document.getElementById('gerarImagem');
+            
+            
+
+            function gerarDog(){
+                fetch('https://dog.ceo/api/breeds/image/random')
+                .then(response=>response.json())
+                .then(data=> { 
+                    imagem.innerHTML = '<img src='+ data.message +' alt="dog" >';
+                } );
+            } 
+            //detectar click
+            botao.addEventListener('click', gerarDog);
+            gerarDog();
+        </script>
+
+    </div>
+</body>
+</html>
