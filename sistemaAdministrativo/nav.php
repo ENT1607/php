@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style>
 <i class="fa-brands fa-phoenix-framework fa-2xl" style="color: #ffffff;"></i>
-  <a class="navbar-brand" href="#">Sistema administrativo</a>
+  <a class="navbar-brand" href="#">Sistema Administrativo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>

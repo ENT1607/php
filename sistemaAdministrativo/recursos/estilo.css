@@ -64,3 +64,15 @@
 ul{
     list-style: none;
 }
+
+.botao{
+    color: white;
+    border: 1px solid #1e90ff;
+    background-color: #1e90ff;
+    border-radius: 5px;
+}
+
+.lg{
+    text-align: center;
+    color: aliceblue;
+}
